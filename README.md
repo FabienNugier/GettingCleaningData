@@ -37,3 +37,14 @@ Again, according to the course assignment:
 4. Appropriately labels the data set with descriptive variable names.
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+## Way the tasks are handled:
+
+The file `run_analysis.R`, which intends to get the data and clean it, addresses the tasks in pretty much the same order. We first collect the X training and testing sets (*X_train.txt* and *X_test.txt*) and merge them together, we then do the same for the Y training and testing sets (*Y_train.txt* and *Y_test.txt*), which consists of dataframes with only one column. We then obtain the names of the columns from *features.txt*. We make sure the sets have compatible dimensions. We add the names to the *X* and *Y* dataframes. We also read the activity labels from *activity_labels.txt* and apply them to the *Y* dataframe. We finally combine dataframes *X* and *Y* together, calling it *data*. We simplify slightly the names of columns in the *data* dataframe and group the rows by categories of *activity*. We then export the dataframe *data* to a text file. 
+
+
+
+
+## Features:
+
+Refer to the Code Book.
+

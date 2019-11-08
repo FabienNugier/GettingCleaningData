@@ -73,8 +73,9 @@ data
 # 5. From the data set in step 4, creates a second, independent tidy data set
 # with the average of each variable for each activity and each subject.
 library(dplyr)
-data %>% group_by(activity) %>% summarize(n())
+# data %>% group_by(activity) %>% summarize(n())
+grpdata <- group_by(data, )
 
 # Exporting data table
-write.csv(data, "./CleanedData.csv")
+write.csv(data, "./CleanedData.txt")
 
