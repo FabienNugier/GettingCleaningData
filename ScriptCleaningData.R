@@ -75,4 +75,6 @@ data
 library(dplyr)
 data %>% group_by(activity) %>% summarize(n())
 
+# Exporting data table
+write.csv(data, "./CleanedData.csv")
 
